@@ -9,10 +9,12 @@
     --white-color: white;
     --black-color: black;
     --aqua-color: #26b0a1;
+    --gray-color: rgb(168, 168, 168);
     --height-top : 70px;
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.6rem;
