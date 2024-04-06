@@ -796,11 +796,12 @@ width: 100%;
 }
 .skill_hardskill_item:hover{
     box-shadow: 0 0 10px var(--white-color);
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    background-color: rgba(212, 211, 211, 0.2);
 }
-.skill_hardskill_item:hover .skill_hardskill_item_text{
+/* .skill_hardskill_item:hover .skill_hardskill_item_text{
     color: var(--aqua-color);
-}
+} */
 .skill_hardskill_item_img{
 
 }
@@ -827,7 +828,11 @@ width: 100%;
 }
 
 
-
+@media (max-width: 435px){
+    .skill_softskill_item{
+        max-width: 100%;
+    }
+}
 
 
 
