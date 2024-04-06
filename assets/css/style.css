@@ -77,11 +77,16 @@
     color: var(--white-color);
 }
 
+
+
 .header_right_menu ul li a:hover {
     color: var(--aqua-color);
     text-shadow: 0 0 15px var(--aqua-color);
 }
-
+.menuactive{
+    color: var(--aqua-color) !important;
+    text-shadow: 0 0 15px var(--aqua-color);
+}
 
 @media (max-width: 840px) {
     .header_left span {

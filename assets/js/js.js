@@ -4,7 +4,7 @@ const nav = document.getElementById('nav');
 const close1 = document.getElementById('close');
 const overlay = document.getElementById('overlay');
 const arrA = document.querySelectorAll('#nav ul li a');
-
+const section = document.querySelectorAll('section');
 
 btn_menu.addEventListener('click',()=>{
     nav.classList.toggle('toggle');
@@ -36,3 +36,20 @@ arrA.forEach(item=>{
     })
 })
 
+document.addEventListener('scroll',()=>{
+    section.forEach(item=>{
+        let top = window.scrollY;
+        let offsettop = item.offsetTop - 150;
+        let height = item.offsetHeight;
+        let id = item.getAttribute('id');
+
+        arrA.forEach(itema=>{
+            if(top >= offsettop && top < offsettop + height ){
+                itema.classList.remove('menuactive');
+                document.querySelector('#nav ul li a[href*=' + id + ']').classList.add('menuactive');
+            }
+        })
+
+    })
+
+})
