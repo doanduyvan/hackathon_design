@@ -834,14 +834,111 @@ width: 100%;
     }
 }
 
+/* experience */
+
+.experience{
+    padding-top: var(--height-top);
+    background-color: var(--background-color);
+}
+
+.experience_title{
+    display: flex;
+}
+.experience_title_text{
+    font-size: 3rem;
+    color: var(--gray-color);
+}
+.experience_title_underline{
+    flex: 1;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.experience_text{
+    margin-top: 30px;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
 
 
+.experience_box_item_img svg{
+    --wh: 70px;
+    width: var(--wh);
+    height: var(--wh);
+}
 
 
+.experience_box{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.experience_box_item{
+    flex: 1;
+    padding: 20px 10px;
+    border-top: 6px solid var(--aqua-color);
+    border-bottom: 6px solid var(--aqua-color);
+    border-left: 1px solid var(--aqua-color);
+    border-right: 1px solid var(--aqua-color);
+    border-radius: 20px;
+    transition: all .3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.experience_box_item:hover{
+    transform: scale(1.1);
+}
+
+.experience_box_item:hover .experience_box_item_title{
+    color: var(--aqua-color);
+}
+.experience_box_item_title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white-color);
+    transition: all .3s linear;
+}
+
+.experience_box_item_text{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.experience_box_item_btn a{
+    --h: 2rem;
+    font-size: 2rem;
+    color: var(--white-color);
+    display: inline-block;
+    background-color: var(--aqua-color);
+    line-height: var(--h);
+    /* height: var(--h); */
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+
+.experience_box_item_btn a:hover{
+    box-shadow: 0 0 15px gray;
+}
 
 
-
-
+@media (min-width: 500px){
+    .experience_box_item{
+        min-width: 210px;
+    }
+}
+@media (max-width: 500px){
+    .experience_box_item{
+        width: 100%;
+        min-width: 226px;
+        
+    }
+}
 
 
 
