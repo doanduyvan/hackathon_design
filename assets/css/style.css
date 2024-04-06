@@ -818,7 +818,13 @@ width: 100%;
     font-weight: bold;
 }
 
-
+@media (max-width: 452px){
+    .skill_hardskill_item{
+        flex: 1;
+        width: auto;
+        min-width: 150px;
+    }
+}
 
 
 
