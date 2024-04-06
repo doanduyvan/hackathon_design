@@ -34,7 +34,6 @@ img{
     display: block;
     width: 1200px;
     max-width: 100%;
-    /* background-color: red; */
     margin: 0 auto;
 }
 @media (max-width: 1200px){
@@ -45,5 +44,4 @@ img{
 }
 
 
-/*  */
 
